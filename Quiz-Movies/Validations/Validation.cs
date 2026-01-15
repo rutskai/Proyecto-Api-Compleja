@@ -34,7 +34,7 @@ namespace Validations
 
              public static bool IsValid(Movie movie)
         {
-            if (movie == null)
+            if (movie == null || movie.Summary==null || movie.Director==null|| movie.Genre==null)
             {
                 return false;
             }
