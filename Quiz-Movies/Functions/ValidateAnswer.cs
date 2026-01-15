@@ -29,7 +29,7 @@ namespace Functions
             if (answer.Trim().ToLower() == movie.Title.Trim().ToLower())
             {
                 await UpdateScore.UpdateScoreAsync();
-                return "\nResultado:\n ¡Correcto!\n\nDetalles:\nDirector: {movie.Director}\nGénero: {movie.Genre}\nAño: {movie.Year}";
+                return $"\nResultado: ¡Correcto!\n\nDetalles:\nDirector: {movie.Director}\nGénero: {movie.Genre}\nAño: {movie.Year}";
             }
             else
             {
