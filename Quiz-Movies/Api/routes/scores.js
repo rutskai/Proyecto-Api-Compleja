@@ -13,7 +13,7 @@ if (fs.existsSync(file)) {
 } else {
   scoreData = {
     Points: 0,
-    Date: new Date().toString("yyyy-MM-dd"),
+    Date: new Date(),
     Message: "Score inicial"
   };
   fs.writeFileSync(file, JSON.stringify(scoreData, null, 2), "utf8");
