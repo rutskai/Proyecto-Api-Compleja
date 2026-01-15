@@ -29,7 +29,7 @@ router.get("/", (req, res) => {
 });
 
 
-router.post("/update", (req, res) => {
+router.put("/update", (req, res) => {
   scoreData.Points += 20;
   scoreData.Date = new Date();
   scoreData.Message = "Score añadido correctamente";
