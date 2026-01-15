@@ -15,7 +15,7 @@ namespace Functions
         {
         try
             {
-                var response = await client.PostAsync("http://localhost:3000/scores/update", null);
+                var response = await client.PutAsync("http://localhost:3000/scores/update", null);
                 response.EnsureSuccessStatusCode();
 
                 await response.Content.ReadFromJsonAsync<Score>();
