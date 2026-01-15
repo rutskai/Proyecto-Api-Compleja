@@ -36,17 +36,18 @@ namespace Functions
                             Console.WriteLine("No es posible acceder a la puntuación.");
                             return;
                         }
-                 Console.WriteLine($"Puntuación: {score.Points}");
+                 Console.WriteLine($"\nPuntuación: {score.Points}\n");
                  break;
                  case 3:
                  await DeleteScore.ResetScoreAsync();
+                 Console.WriteLine("\nPuntuación reiniciada correctamente.\n");
                  break;
                  case 4:
                  Console.WriteLine("Saliendo...");
                  return;
 
                  default:
-                 Console.WriteLine("Solo puedes pulsar la tecla 1, 2 o 3.");
+                 Console.WriteLine("Solo puedes pulsar la tecla 1, 2 o 3.\n");
                  break;
             }
          }
