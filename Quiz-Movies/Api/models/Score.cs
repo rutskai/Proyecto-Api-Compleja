@@ -1,6 +1,10 @@
 
 namespace Models
 {
+    /**
+     * @class Score
+     * Representa la puntuación del usuario en el quiz.
+     */
     public class Score
     {
         public int? Points { get; set; }

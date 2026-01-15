@@ -20,6 +20,12 @@ if (fs.existsSync(file)) {
 }
 
 
+/**
+ * @route GET /
+ * @desc Obtiene la puntuación actual del usuario.
+ * Actualiza la fecha y el mensaje antes de enviar la respuesta.
+ * @returns {Object} scoreData - Objeto con Points, Date y Message.
+ */
 router.get("/", (req, res) => {
   scoreData.Date = new Date();
   scoreData.Message = "Score actual";
@@ -28,6 +34,12 @@ router.get("/", (req, res) => {
   res.json(scoreData);
 });
 
+/**
+ * @route PUT /update
+ * @desc Incrementa la puntuación del usuario en 20 puntos.
+ * Actualiza la fecha y el mensaje antes de enviar la respuesta.
+ * @returns {Object} scoreData - Objeto actualizado con Points, Date y Message.
+ */
 
 router.put("/update", (req, res) => {
   scoreData.Points += 20;
@@ -38,7 +50,12 @@ router.put("/update", (req, res) => {
   res.json(scoreData);
 });
 
-
+/**
+ * @route DELETE /reset
+ * @desc Reinicia la puntuación del usuario a 0.
+ * Actualiza la fecha y el mensaje antes de enviar la respuesta.
+ * @returns {Object} scoreData - Objeto actualizado con Points = 0, Date y Message.
+ */
 router.delete("/reset", (req, res) => {
   scoreData.Points = 0;
   scoreData.Date = new Date();

@@ -4,8 +4,21 @@ using Validations;
 
 namespace Functions
 {
+     /**
+     * @class GetMovies
+     * Clase encargada de obtener películas desde la API y de proporcionar películas aleatorias.
+     */
+
     class GetMovies
     {
+
+        /**
+         * Obtiene todas las películas desde la API mediante GetApiMovies.GetApiMoviesAsync().
+         * Valida que la lista no sea nula ni esté vacía.
+         * 
+         * @return Task<List<Movie>> Una lista de películas; si ocurre un error o la lista no es válida, retorna una lista vacía.
+         */
+
         public static async Task<List<Movie>> GetAllMoviesAsync()
         {
 
@@ -31,6 +44,13 @@ namespace Functions
         }
 
        private static readonly HttpClient client = new HttpClient();
+
+       
+        /**
+         * Obtiene una película aleatoria desde la API usando HttpClient y el endpoint "/movies/random".
+         * 
+         * @return Task<Movie> La película obtenida; si ocurre un error, retorna un objeto Movie vacío.
+         */
 
         public static async Task<Movie> GetRandomMovieAsync()
         {

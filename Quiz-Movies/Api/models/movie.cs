@@ -1,5 +1,9 @@
 namespace Models
 {
+    /**
+     * @class Movie
+     * Representa una película con sus propiedades principales.
+     */
     public class Movie
     {
         public int Id { get; set; }

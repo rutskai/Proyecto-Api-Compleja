@@ -9,6 +9,9 @@ app.use(express.json());
 app.use("/movies", moviesRoutes);
 app.use("/scores", scoresRoutes);
 
+/**
+ * @desc Inicializa el servidor en el puerto 3000 y muestra un mensaje en consola
+ */
 
 const port = 3000;
 app.listen(port, () => {

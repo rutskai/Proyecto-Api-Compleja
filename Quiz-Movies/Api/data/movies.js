@@ -1,7 +1,27 @@
 const express = require("express");
 
+/**
+ * @class MoviesApi
+ * Clase que proporciona la lista de películas de los años 90.
+ */
 
 class MoviesApi {
+  
+  /**
+   * @method loadMovies
+   * Carga y devuelve una lista de películas con sus propiedades principales.
+   *
+   * Cada película incluye:
+   * - Id: Identificador único.
+   * - Title: Título de la película.
+   * - Director: Nombre del director.
+   * - Year: Año de estreno.
+   * - Genre: Género de la película.
+   * - Summary: Breve resumen o sinopsis.
+   *
+   * @returns {Array<Object>} Lista de películas.
+   */
+
   static loadMovies() {
     const movies = [
       {

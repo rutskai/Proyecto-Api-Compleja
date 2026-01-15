@@ -4,8 +4,20 @@ using static Validations.GeneralValidation;
 
 namespace Functions
 {
+    /**
+     * @class GetApiMovies
+     * Clase encargada de obtener la lista completa de películas desde la API.
+     */
     class GetApiMovies
     {
+        /**
+         * Realiza una petición HTTP GET al endpoint "/movies" para obtener todas las películas.
+         * Deserializa el contenido JSON recibido en una lista de objetos Movie.
+         * Valida que la lista no sea nula ni esté vacía.
+         * Captura cualquier excepción durante la llamada a la API y devuelve una lista vacía en caso de error.
+         *
+         * @return Task<List<Movie>> Lista de películas obtenidas desde la API; si ocurre un error, retorna una lista vacía.
+         */
         public static async Task<List<Movie>> GetApiMoviesAsync()
         {
             try

@@ -4,9 +4,19 @@ using Validations;
 namespace Functions
 {
 
-
+    /**
+     * @class Menu
+     * Clase que gestiona el menú principal del Quiz de películas de los 90.
+     */
     class Menu
     {
+        /**
+         * Muestra el menú principal y permite al usuario interactuar con las opciones:
+         * 1) Mostrar Quiz 2) Mostrar puntuación 3) Borrar puntuación 4) Salir
+         * El método seguirá mostrando el menú hasta que el usuario seleccione salir.
+         * 
+         * @return Task que representa la operación asincrónica de mostrar el menú.
+         */
         public static async Task showMenu()
         {
             int option=-1;
@@ -36,6 +46,7 @@ namespace Functions
                             Console.WriteLine("No es posible acceder a la puntuación.");
                             return;
                         }
+                
                  Console.WriteLine($"\nPuntuación: {score.Points}\n");
                  break;
                  case 3:

@@ -4,8 +4,23 @@ using static Functions.GetMovies;
 
 namespace Functions
 {
+
+     /**
+     * @class MenuQuiz
+     * Clase que gestiona el quiz de películas de los 90.
+     */
+     
     class MenuQuiz
     {
+
+        /**
+         * Muestra una película aleatoria de los 90 y permite al usuario adivinar su nombre.
+         * Después de cada intento, se muestra si la respuesta es correcta o incorrecta.
+         * El quiz continúa hasta que el usuario escriba 'n' para salir.
+         *
+         * @return Task que representa la operación asincrónica de mostrar el quiz.
+         */
+
         public static async Task showQuiz()
         {
             string option="";
