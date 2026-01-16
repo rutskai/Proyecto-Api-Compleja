@@ -27,7 +27,7 @@ class Program
         {
             Process.Start("node", @"./Api/routes/server.js");
             await Task.Delay(2000);
-            await Menu.showMenu();
+            await Menu.ShowMenu();
         }
         catch (Exception e)
         {
