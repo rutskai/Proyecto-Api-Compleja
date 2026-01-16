@@ -21,7 +21,7 @@ namespace Functions
          * @return Task que representa la operación asincrónica de mostrar el quiz.
          */
 
-        public static async Task showQuiz()
+        public static async Task ShowQuiz()
         {
             string option="";
             while (option.ToLower()!="n")
