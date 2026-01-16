@@ -33,9 +33,9 @@ dotnet run
 | ------ | ---------------- | ------------------------------------------------------------------------------------------------- |
 | GET    | /movies          | Devuelve todas las preguntas disponibles.                                                         |
 | GET    | /movies/random   | Devuelve una pregunta aleatoria.                                                                  |
-| GET    | /score           | Devuelve la puntuación actual del usuario.                                                        |
-| PUT    | /score/update    | Actualiza los datos incrementando la puntuación del usuario en 20 puntos.                         |
-| DELETE | /score/reset     | Resetea la puntuación del usuario a a su estado inicial ( 0 puntos).                              |
+| GET    | /scores           | Devuelve la puntuación actual del usuario.                                                       |
+| PUT    | /scores/update    | Actualiza los datos incrementando la puntuación del usuario en 20 puntos.                        |
+| DELETE | /scores/reset     | Resetea la puntuación del usuario a a su estado inicial ( 0 puntos).                             |
 
 - En la ruta scores.js se crea un JSON donde se puede seguir la pista de la puntuación y queda registrada, al salid de la aplicación
  y volver a entrar, la puntuación permanece.
